@@ -1,0 +1,50 @@
+I want you to design and develop a fully functional online multiplayer board game inspired by "Monopoly" named Eihtikar, with the following detailed specifications. The game should be in Arabic and should have a professional and polished structure, suitable for online play. Please include code, architecture suggestions, and clear instructions for implementation.
+
+1- Game Interface
+- All text, labels, buttons, and messages must be in Arabic.
+- The game board should have 40 tiles, including properties, stations, chance/community cards, and special tiles like Jail, Free Parking, or Rewards.
+- Each property tile must display its name, cost, and rent clearly.
+- Include simple and visually appealing graphics for tiles, player tokens, and other game elements.
+- Use responsive design so the game works on both desktop and mobile browsers.
+2- Multiplayer and Online Functionality
+-Players can join private rooms, each with a unique room ID or name.
+-Maximum of 4-6 players per room.
+-Each room should have a room owner (manager) with special privileges.
+-Players can see real-time updates of all moves, money balances, and property ownership.
+-Implement WebSocket communication for real-time gameplay and chat.
+3- Room Manager Features
+The room owner can:
+-Start or restart the game.
+-Add or remove players.
+-Set initial money for all players.
+-Enable/disable certain game rules or special tiles.
+-Monitor player status and game events.
+4- Game Mechanics
+- The system of throwing one dice for player movement (1-6 per turn) or two dice (2-12 per turn) at the choice of the room host.
+- Players can buy, sell, or trade properties with other players.
+- Rent payments must be automatically calculated and deducted.
+- Include Chance and Community Chest cards with random events like Jail, bonus money, or penalties.
+- Keep track of each player's balance and properties in real-time.
+5- In-Game Chat
+- Each room has a private chat visible only to players in that room.
+- Messages should show the sender's name and timestamp.
+- Support basic text formatting if possible (bold, emojis).
+6- Additional Recommended Features
+- Turn timer to limit the duration of each player's move.
+- Leaderboard displaying players ranked by money or assets.
+- Game log recording all major events (property purchases, rent payments, card events).
+- Option to save and resume the game later.
+- Simple sound effects for dice rolls, property purchases, and notifications.
+- Game settings editable by the room manager, such as initial money, game speed, or custom house rules.
+7- Technical Specifications
+- Frontend: HTML, CSS, JavaScript (optionally React or Vue for better structure).
+- Backend: Node.js (Express).
+- Database: supabase.com, suitable database to store rooms, player data, and game state.
+- Real-time Communication: WebSockets (Socket.IO recommended) to handle live multiplayer interactions.
+- Ensure the code is modular, clean, and well-commented for easy maintenance and future development.
+- Provide clear instructions on how to run the game locally and deploy it online.
+8- Deliverables
+- Fully functional web-based Monopoly-style game in Arabic.
+- Organized folder structure with separate files for frontend, backend, and assets.
+- Example data for rooms and players to test multiplayer functionality.
+- Optional: Deployment instructions for hosting on the web.
